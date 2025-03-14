@@ -23,4 +23,6 @@ export function useGeolocation() {
       setIsLoading(false);
     }
   );
+
+  return { isLoading, error, lat, lng };
 }

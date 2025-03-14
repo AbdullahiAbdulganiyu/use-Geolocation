@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <div>
-      <button onClick={getPosition} disabled={isLoading}>
+      <button onClick={handleCount} disabled={isLoading}>
         Get my position
       </button>
 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useGeolocation } from "./useGeolocation";
 
 export default function App() {
   // const [isLoading, setIsLoading] = useState(false);
@@ -6,6 +7,14 @@ export default function App() {
   // const [error, setError] = useState(null);
 
   const [countClicks, setCountClicks] = useState(0);
+
+  const {
+    isLoading,
+    position: { lat, lng },
+    error,
+    getPosition,
+  } = useGeolocation();
+
   function handleClick() {
     setCountClicks((count) => count + 1);
   }

@@ -17,6 +17,7 @@ export default function App() {
 
   function handleClick() {
     setCountClicks((count) => count + 1);
+    getPosition();
   }
   // const { lat, lng } = position;
 

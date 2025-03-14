@@ -8,7 +8,7 @@ export default function App() {
   const [error, setError] = useState(null);
 
   const [countClicks, setCountClicks] = useState(0);
-  function handleCount() {
+  function handleClick() {
     setCountClicks((count) => count + 1);
   }
   const { lat, lng } = position;
@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <div>
-      <button onClick={handleCount} disabled={isLoading}>
+      <button onClick={handleClick} disabled={isLoading}>
         Get my position
       </button>
 
